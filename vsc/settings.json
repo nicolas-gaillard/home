@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Relaxed",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.jediEnabled": false,
+    "python.linting.pylintEnabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "terminal.integrated.shell.osx": "zsh"
+}
