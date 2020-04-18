@@ -11,14 +11,18 @@ git clone https://https://github.com/nicolazg/home .home
 
 The cleanup script for OSX is coming from this [repo](https://github.com/fwartner/mac-cleanup).
 
-### Installing
+## Installing
 
 ```
 cd .home
 ./install.sh
 ```
 
-## TODO
+## Upgrade & cleaning
+
+`./upgrade.sh; ./cleanup.sh`
+
+### TODO
 * Freeze brew
     * https://github.com/Homebrew/homebrew-bundle
     * `brew leaves > formula.txt ; brew cask list >> formula.txt`
