@@ -19,4 +19,4 @@ echo “install with: mas upgrade”
 
 # - Others -
 # npm update -g
-echo “and pip ? pip freeze — local | grep -v ‘^\-e’ | cut -d = -f 1 | xargs pip install -U “
+echo "and pip ? pip freeze — local | grep -v ‘^\-e’ | cut -d = -f 1 | xargs pip install -U"
