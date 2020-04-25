@@ -58,4 +58,7 @@ brew install mas
 brew install httpie
 brew install pstree
 
+# Copying configuration files
+./copy.sh
+
 echo "End of the script"
