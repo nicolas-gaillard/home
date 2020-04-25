@@ -181,6 +181,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias less="less -R"
 alias rm="rm -i" # confirm removal
+alias workspace="cd ~/workspace"
 
 # Color LS
 colorflag="-G"

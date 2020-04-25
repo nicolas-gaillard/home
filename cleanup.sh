@@ -107,6 +107,9 @@ if type "brew" &>/dev/null; then
     #brew cask cleanup &>/dev/null
     rm -rfv $(brew --cache) &>/dev/null
     brew tap --repair &>/dev/null
+    echo 'Homebrew diagnostic'
+    brew doctor
+    brew missing
 fi
 
 if type "gem" &> /dev/null; then
