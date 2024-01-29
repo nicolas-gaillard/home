@@ -1,0 +1,42 @@
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+__MACOSX
+.Trashes
+Icon?
+
+# Thumbnail cache files
+._*
+Thumbs.db
+ehthumbs.db
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+*.pyc
+*.log
+*.sqlite
+
+# Application specific files
+venv
+node_modules
+.sass-cache
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Application specific files
+venv
+node_modules
+.sass-cache
+.vscode
+.idea
