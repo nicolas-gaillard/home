@@ -171,13 +171,13 @@ export TERM=xterm-256color
 
 # --- ALIAS ---
 # For a full list of active aliases, run `alias`.
-alias sourcez="source ~/.zshrc"
-alias configz="code ~/.zshrc"
+alias zshconfig="code ~/.zshrc"
+alias zshsource="source ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias hc="history -c"
 alias x="exit"
 alias unsetProxies="unset http_proxy && unset https_proxy && unset HTTP_PROXY && unset HTTPS_PROXY"
-alias weather='curl http://wttr.in/Nantes'
+alias weather="curl http://wttr.in/Nantes"
 alias grep="grep --color=auto" # colorize `grep` output
 
 # Nav
@@ -197,8 +197,14 @@ alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
 alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
 alias ll="exa -al"
 
+# Docker
+alias dc="docker-compose"
+alias dcb="docker-compose build"
+alias dcd="docker-compose down --remove-orphans"
+alias dcu="docker-compose up"
+
 # Git
-alias gl="git ls"
+alias gl='git log --graph --pretty=format:"%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)" --abbrev-commit $*'
 alias gaa="git add ."
 alias ga="git add"
 alias gap="git add -p"
@@ -207,10 +213,13 @@ alias gd="git diff"
 alias gs="git status"
 alias gss="git status -sb"
 alias gpom="git pull origin master"
-alias gco='git checkout'
-alias gr='git rebase'
-alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias gco="git checkout"
+alias gr="git rebase"
+alias gspp="git stash && git pull && git stash pop"
+
+# Misc
+alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
+alias hidefiles="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 
 # Run
 eval "$(starship init zsh)"
