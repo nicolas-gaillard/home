@@ -150,12 +150,19 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# Functions
 function gacp() {
     git add .
     git commit -m "$1"
     git push
 }
+
+dei(){docker exec -it $1 bash}
+
+pyclean () {
+    find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
+}
+
 
 # You may need to manually set your language environment
 export LANG=fr_FR.UTF-8
